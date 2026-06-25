@@ -1,6 +1,6 @@
 # OrbitGuard — AI Space Debris Tracker
 
-> **AI-powered space situational awareness dashboard** with real-time 3D orbit visualization, collision prediction, and risk scoring using NASA/Space-Track APIs and Claude AI.
+> **AI-powered space situational awareness dashboard** with real-time 3D orbit visualization, collision prediction, and risk scoring using NASA/Space-Track APIs and GEMINI AI.
 
 ---
 
@@ -45,7 +45,7 @@ cp backend/.env.example backend/.env
 | Service | URL | Cost |
 |---|---|---|
 | NASA Space-Track | https://www.space-track.org/auth/createAccount | Free |
-| Anthropic Claude | https://console.anthropic.com | Pay-per-use |
+| Gemini 1.5 Flash | https://aistudio.google.com/ | Free |
 | NASA APIs (DONKI) | https://api.nasa.gov | Free |
 
 ### 4. Run
@@ -130,7 +130,7 @@ Pc ≈ (π × HBR²) / (√(2π) × σ) × exp(−d² / 2σ²)
 - Solar flare events (affect atmospheric drag → orbit decay uncertainty)
 - Geomagnetic storm data
 
-### Anthropic Claude (AI analysis)
+### Gemini 1.5 Flash (AI analysis)
 - Natural-language conjunction assessment
 - Risk trend summarisation
 - Operator recommendations
