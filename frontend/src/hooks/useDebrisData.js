@@ -95,9 +95,11 @@ export default function useDebrisData() {
     setLastUpdate(new Date());
   }, []);
 
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
+
   const fetchFromBackend = useCallback(async () => {
     // Try our Node.js backend first (which proxies NASA Space-Track)
-    const response = await fetch('http://localhost:3002/api/debris/catalog?limit=100', {
+    const response = await fetch(`${API_URL}/api/debris/catalog?limit=100`, {
       signal: AbortSignal.timeout(8000),
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
