@@ -95,7 +95,7 @@ export default function useDebrisData() {
     setLastUpdate(new Date());
   }, []);
 
-  const API_URL = import.meta.env.VITE_BACKEND_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const fetchFromBackend = useCallback(async () => {
     // Try our Node.js backend first (which proxies NASA Space-Track)
